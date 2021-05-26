@@ -2,12 +2,14 @@ package com.dspd;
 
 public class Rit extends Stap{
 
-    public Rit(String name) {
-        super(name);
+    private final String type = "KM";
+
+    public Rit(double weight, Locatie startingLocation, Locatie endLocation) {
+        super(weight, startingLocation, endLocation);
     }
 
     @Override
-    public void call() {
-        System.out.println("test");
+    public String getWeighttype() {
+        return type;
     }
 }

@@ -2,12 +2,14 @@ package com.dspd;
 
 public class Treinrit extends Stap {
 
-    public Treinrit(String name) {
-        super(name);
+    private final String type = "Per minuut";
+
+    public Treinrit(double weight, Locatie startingLocation, Locatie endLocation) {
+        super(weight, startingLocation, endLocation);
     }
 
     @Override
-    public void call() {
-        System.out.println("test");
+    public String getWeighttype() {
+        return type;
     }
 }
